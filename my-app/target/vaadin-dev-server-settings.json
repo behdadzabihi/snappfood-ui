@@ -1,0 +1,14 @@
+{
+  "frontendFolder": "C:/Users/Behdad/Desktop/my-app/my-app/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/Behdad/Desktop/my-app/my-app/target/flow-frontend",
+  "staticOutput": "C:/Users/Behdad/Desktop/my-app/my-app/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "frontendBundleOutput": "C:\\Users\\Behdad\\Desktop\\my-app\\my-app\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "addonFrontendFolder": "target/flow-frontend/",
+  "themeName": "myapp",
+  "clientServiceWorkerSource": "C:\\Users\\Behdad\\Desktop\\my-app\\my-app\\target\\sw.ts",
+  "pwaEnabled": true,
+  "offlineEnabled": true,
+  "offlinePath": "'.'"
+}

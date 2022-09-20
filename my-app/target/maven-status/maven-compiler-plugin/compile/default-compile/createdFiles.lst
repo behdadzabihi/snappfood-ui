@@ -1,0 +1,10 @@
+com\example\application\Application.class
+com\example\application\supplier_category_service\CategoryProxy.class
+com\example\application\main\DashboardView.class
+com\example\application\main\ListView.class
+com\example\application\main\MapView.class
+com\example\application\main\MainLayout.class
+com\example\application\supplier_category_service\CategoryDTO.class
+com\example\application\main\Person.class
+com\example\application\main\AllView.class
+com\example\application\main\CategoryView.class
