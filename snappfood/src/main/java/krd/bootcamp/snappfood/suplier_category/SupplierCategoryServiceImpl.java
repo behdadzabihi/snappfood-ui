@@ -31,6 +31,8 @@ public class SupplierCategoryServiceImpl implements SupplierCategoryService {
     public SupplierCategory update(SupplierCategory supplierCategory) {
         SupplierCategory lastSupplierCategory=findById(supplierCategory.getId());
         lastSupplierCategory.setTitle(supplierCategory.getTitle());
+        Supplier supplier=supplierService.findById(supplierCategory.getSupplier().getId());
+        lastSupplierCategory.setSupplier(supplier);
         return repository.save(lastSupplierCategory);
     }
 

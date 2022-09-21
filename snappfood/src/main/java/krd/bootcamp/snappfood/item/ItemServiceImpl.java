@@ -35,6 +35,8 @@ public class ItemServiceImpl implements ItemService {
         lastItem.setPrice(item.getPrice());
         lastItem.setImage(item.getImage());
         lastItem.setDescription(item.getDescription());
+        SupplierCategory supplierCategory=supplierCategoryService.findById(item.getSupplierCategory().getId());
+        lastItem.setSupplierCategory(supplierCategory);
         return repository.save(lastItem);
     }
 

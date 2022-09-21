@@ -39,6 +39,10 @@ public class BasketItemServiceImpl implements BasketItemService {
     public BasketItem update(BasketItem basketItem) {
         BasketItem lastBasketItem=findById(basketItem.getId());
         lastBasketItem.setCount(basketItem.getCount());
+        Basket basket=basketService.findById(basketItem.getBasket().getId());
+        Item item=itemService.findById(basketItem.getItem().getId());
+        lastBasketItem.setBasket(basket);
+        lastBasketItem.setItem(item);
         return repository.save(lastBasketItem);
     }
 

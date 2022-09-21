@@ -51,6 +51,8 @@ public class AddressServiceImpl implements AddressService{
         lastAddress.setTitle(address.getTitle());
         lastAddress.setPhoneNumber(address.getPhoneNumber());
         lastAddress.setLocation(address.getLocation());
+        UserApp userApp=userAppService.findById(address.getUserApp().getId());
+        lastAddress.setUserApp(userApp);
         return repository.save(lastAddress);
     }
 

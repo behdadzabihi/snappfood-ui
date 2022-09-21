@@ -38,6 +38,8 @@ public class SupplierServiceImpl implements SupplierService {
         lastSupplier.setPassword(supplier.getPassword());
         lastSupplier.setDeliveryPrice(supplier.getDeliveryPrice());
         lastSupplier.setLocation(supplier.getLocation());
+        Category category=categoryService.findById(supplier.getCategory().getId());
+        lastSupplier.setCategory(category);
         return repository.save(lastSupplier);
     }
 

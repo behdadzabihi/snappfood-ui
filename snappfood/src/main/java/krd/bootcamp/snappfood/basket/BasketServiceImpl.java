@@ -40,6 +40,8 @@ public class BasketServiceImpl implements BasketService{
         Basket lastBasket=findById(basket.getId());
         lastBasket.setPaidPrice(basket.getPaidPrice());
         lastBasket.setFinalizeBasket(basket.getFinalizeBasket());
+        Address address=addressService.findById(basket.getAddress().getId());
+        lastBasket.setAddress(address);
         return repository.save(lastBasket);
     }
 
